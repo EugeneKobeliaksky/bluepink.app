@@ -1,30 +1,39 @@
 @import "variables.scss";
 
-@mixin input-style{
-    border: none;
-    width: 60px;
+////font style
+// font weight upload 400, 600, 700
+@mixin font-three-italic{
+    font-family: $font;
+    font-weight: 400;
+    font-style: italic;
 }
-@mixin input-style-hover{
-    border-bottom: 1px solid #8ed1b7;
+@mixin font-three{
+    font-family: $font;
+    font-weight: 400;
 }
-
-@mixin  nav-text{
-    padding: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: $font-text;
-    color: $color-title-on-light;
-    letter-spacing: 1px;
-    font-size: 14px;
-    font-weight: 500;
+@mixin font-two{
+    font-family: $font;
+    font-weight: 600;
 }
-
-@mixin hover-animation {
-    transition-duration: 0.2s;
+@mixin font-one{
+    font-family: $font;
+    font-weight: 700;
+}
+//// animation hover text
+@mixin animation-time{
+    transition: .2s;
     transition-delay: .1s;
-    transform: .2s;
-    -webkit-transform: .2s;
-    -moz-transform: .2s;
-    -ms-transform: .2s;
-    -o-transform: .2s;
 }
+////content position style
+@mixin content-width-desktop{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/* @mixin content-width-tab{
+    margin: 0 auto;
+    max-width: 1000px;
+} */
+/* @mixin content-width-mobile{
+    margin: 0 auto;
+    max-width: 1000px;
+} */
