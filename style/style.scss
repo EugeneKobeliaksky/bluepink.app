@@ -294,6 +294,11 @@ body{
         }
     }
     footer{
-
+        .footer-wrap{
+            p{
+                @include font-text-main;
+                text-align: center;
+            }
+        }
     }
 }
