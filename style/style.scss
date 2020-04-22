@@ -1,6 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
-@import "media.scss";
+
 
 *{
     margin: 0;
@@ -54,6 +54,10 @@ body{
             li:hover{
                 color: #a45f93;
             }
+        }
+        .btn-menu{
+            display: none;
+            width: 15px;
         }
     }
     main{
@@ -302,3 +306,4 @@ body{
         }
     }
 }
+@import "media.scss";
